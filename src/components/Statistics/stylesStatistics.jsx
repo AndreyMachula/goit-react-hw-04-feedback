@@ -18,9 +18,10 @@ export const StatisticsListItem = styled.li`
 
 export const StatisticsElem = styled.p`
   color: ${props =>
-    (props.children[2] >= 66 && 'lime') ||
-    (props.children[2] < 66 && props.children[2] > 33 && 'gold') ||
+    (props.children[2] >= 66 && 'green') ||
+    (props.children[2] < 66 && props.children[2] > 33 && 'yellow') ||
     (props.children[2] <= 66 && 'crimson')};
+  font-size: 24px;
   font-weight: 800;
   margin-bottom: 0px;
 `;
