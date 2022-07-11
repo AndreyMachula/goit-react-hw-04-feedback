@@ -1,16 +1,11 @@
-export const App = () => {
+import Container from 'Container/Container';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="App">
+      <Container />
     </div>
   );
 };
+
+export default App;
