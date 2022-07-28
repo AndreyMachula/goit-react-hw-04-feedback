@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ContainerButtons, Button } from './styledFeedbackOptions';
 
 const FeedbackOptions = ({ data, onLeaveFeedback }) => {
+  // console.log(data)
   const buttonsName = Object.keys(data);
 
   return (
@@ -13,7 +14,7 @@ const FeedbackOptions = ({ data, onLeaveFeedback }) => {
           key={buttonsName.indexOf(name)}
           type="button"
           name={name}
-          onClick={onLeaveFeedback}
+          onClick={() => onLeaveFeedback(name)}
         >
           {name}
         </Button>
